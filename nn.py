@@ -44,7 +44,7 @@ class NN:
 		self.b0 = numpy.zeros(nhidden)
 		self.b1 = numpy.zeros(nout)
 
-		# Input, hidden and output vectors (O: output of the neuron, W: Weight, D: Gradient derivate)
+		# Input, hidden and output layer vectors (O: output of the neuron, W: weight, D: delta)
 		self.inputsW  = numpy.zeros((self.nin,self.nhidden))
 
 		self.hiddensW = numpy.zeros((self.nhidden,self.nout))
