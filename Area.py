@@ -58,7 +58,7 @@ elif len(sys.argv) == 6:
 	nn.saveWeights(sys.argv[5])
 
 else:
-	print("Usage:\n   python Area.py training_file learning_rate number_hidden_neurons test_file weight_file = \"./pesos\"\n   python Area.py weight_file test_file")
+	print("Usage:\n   python Area.py training_file learning_rate number_hidden_neurons test_file \n   python Area.py weight_file test_file")
 	quit()
 
 
