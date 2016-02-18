@@ -81,8 +81,10 @@ elif len(sys.argv) >= 4:
 
 		for x,y in errorPlot:
 			print(">>")
-			print (x)
-			print (y)
+			print (len(x))
+			print (len(y))
+			if (len(x) != len(y)):
+				x = [xi for xi in range(1,len(y)+1)]
 			plt.plot(x, y, '-', label=str(nvalues[i]))
 			i+=1
 		plt.legend()
