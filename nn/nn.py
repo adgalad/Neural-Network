@@ -143,7 +143,7 @@ class NN:
 		try:
 			self.errorX = []
 			self.errorY = []
-			while(ite < 5000 and totalError > 5):
+			while(ite < 2000 and totalError > 5):
 				totalError = 0
 				for x,t in trainingSet:
 					# Forward Propagation

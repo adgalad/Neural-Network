@@ -1,0 +1,11 @@
+for i in {3..10}
+	do python Area.py ./datos_P1_RN_EM2016_n500.txt 0.1 $i ./pruebaArea.txt  ./hola .
+done
+
+for i in {7..10}
+	do python Area.py ./datos_P1_RN_EM2016_n1000.txt 0.1 $i ./pruebaArea.txt  ./hola .
+done
+
+for i in {7..10}
+	do python Area.py ./datos_P1_RN_EM2016_n2000.txt 0.1 $i ./pruebaArea.txt  ./hola .
+done

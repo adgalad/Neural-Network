@@ -76,7 +76,7 @@ elif len(sys.argv) >= 4:
 				mediaY = sumaVector(mediaY, nn.errorY)
 			mediaY = [y/5 for y in mediaY]
 			errorPlot += [[mediaX,mediaY]]
-		print(">>"+str(len(errorPlot)))
+			print(">>"+str(len(errorPlot)))
 		i = 0
 
 		for x,y in errorPlot:
