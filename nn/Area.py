@@ -66,7 +66,7 @@ elif len(sys.argv) >= 4:
 	mediaY = []
 	#TRAINING
 	if len(sys.argv) > 6 and sys.argv[6] == ".":
-		nvalues =[0.5, 0.3, 0.1, 0.05, 0.01]
+		nvalues =[0.5, 0.4, 0.3, 0.2, 0.1]
 		for i in range(5):
 			for j in range(5):
 				nn.backPropagation(trainingSet, nvalues[i] , 2, nhidden, 1)

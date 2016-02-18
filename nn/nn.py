@@ -143,7 +143,7 @@ class NN:
 		try:
 			self.errorX = []
 			self.errorY = []
-			while(ite < 2000 and totalError > 5):
+			while(ite < 5000 and totalError > 5):
 				totalError = 0
 				for x,t in trainingSet:
 					# Forward Propagation
@@ -175,7 +175,7 @@ class NN:
 				self.errorX += [ite]
 				self.errorY += [totalError]
 				ite += 1
-				print("Epoch = "+str(ite)+ ", Error = "+str(totalError))
+#				print("Epoch = "+str(ite)+ ", Error = "+str(totalError))
 		except KeyboardInterrupt:
 			pass
 			
